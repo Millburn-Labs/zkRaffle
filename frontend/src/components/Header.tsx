@@ -42,7 +42,9 @@ export default function Header() {
 
           {/* Connect Wallet Button */}
           <div className="hidden md:flex items-center gap-4">
-            <button
+
+            <appkit-button />
+            {/* <button
               onClick={handleConnectWallet}
               className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 isWalletConnected
@@ -52,7 +54,7 @@ export default function Header() {
             >
               <Wallet className="w-5 h-5" />
               <span>{isWalletConnected ? 'Connected' : 'Connect Wallet'}</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}
